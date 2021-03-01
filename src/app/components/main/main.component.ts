@@ -1,8 +1,12 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+
 import { FilmsServiceService } from 'src/app/services/films-service.service';
 import { IFilm } from 'src/app/viewmodels/ifilm';
-import { DomSanitizer } from '@angular/platform-browser';
+import {
+  DomSanitizer,
+  SafeHtml,
+  SafeResourceUrl,
+} from '@angular/platform-browser';
 import { take, map, filter } from 'rxjs/operators';
 import {
   CdkDragDrop,
@@ -17,21 +21,17 @@ import {
 })
 export class MainComponent implements OnInit, OnChanges {
   imgs: any = [];
-  ChannelID: number = 2;
+  ChannelID: number = 1;
   filmList: IFilm[] = [];
+  filmurl: SafeResourceUrl | any;
 
   constructor(
     private filmService: FilmsServiceService,
     private _sanitizationService: DomSanitizer
-  ) {
-    this.imgs = [
-      { path: '../../../assets/carousel1.jpg' },
-      { path: '../../../assets/carousel2.jpg' },
-      { path: '../../../assets/carousel3.jpg' },
-      { path: '../../../assets/carousel4.jpg' },
-    ];
+  ) {}
+  ngOnChanges(changes: SimpleChanges): void {
+    this.getSafeurl();
   }
-  ngOnChanges(): void {}
 
   ngOnInit(): void {
     this.filmService.getFilmsbyChannelID(this.ChannelID).subscribe(
@@ -43,6 +43,7 @@ export class MainComponent implements OnInit, OnChanges {
         console.log(err);
       }
     );
+    this.getSafeurl();
   }
 
   refresh() {
@@ -75,25 +76,23 @@ export class MainComponent implements OnInit, OnChanges {
       }
     );
   }
+  getSafeurl() {
+    this.filmService.getFilmsbyChannelID(this.ChannelID).subscribe((res) => {
+      res.map(
+        (item) =>
+          (this.filmurl = this._sanitizationService.bypassSecurityTrustResourceUrl(
+            item.embed
+          ))
+      );
+      // res.forEach((i) => {
+      //   this.filmurl = this._sanitizationService.bypassSecurityTrustResourceUrl(
+      //     i.embed
+      //   );
+      //   this.filmurl = this.filmurl.toString();
 
-  getSafeURL(filmurl: string) {
-    // var promise = new Promise((res, rej) => {
-    // });
-    // Promise.resolve('shown')
-    //   .then(() => {
-    //     return this._sanitizationService.bypassSecurityTrustResourceUrl(
-    //       filmurl
-    //     );
-    //   })
-    //   .catch((e) => {
-    //     console.log(e);
-    //   });
-    try {
-      return this._sanitizationService.bypassSecurityTrustResourceUrl(filmurl);
-    } catch (e) {
-      console.log("can't get vedios " + e);
-      return null;
-    }
+      //   console.log('k ' + this.filmurl);
+      // });
+    });
   }
 
   drop(event: CdkDragDrop<IFilm[]>) {

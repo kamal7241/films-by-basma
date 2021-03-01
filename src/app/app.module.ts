@@ -20,12 +20,16 @@ import { VgCoreModule } from '@videogular/ngx-videogular/core';
 import { VgControlsModule } from '@videogular/ngx-videogular/controls';
 import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
 import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
+import { SafePipe } from './pipes/safe.pipe';
+import { SafePipeModule } from 'safe-pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NotFoundComponent,
+    SafePipe,
+    SafePipeModule,
     //HttpClientModule,
     //HttpClient,
     // HttpModule,
