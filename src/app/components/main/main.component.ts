@@ -84,14 +84,6 @@ export class MainComponent implements OnInit, OnChanges {
             item.embed
           ))
       );
-      // res.forEach((i) => {
-      //   this.filmurl = this._sanitizationService.bypassSecurityTrustResourceUrl(
-      //     i.embed
-      //   );
-      //   this.filmurl = this.filmurl.toString();
-
-      //   console.log('k ' + this.filmurl);
-      // });
     });
   }
 

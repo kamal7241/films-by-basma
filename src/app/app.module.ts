@@ -16,20 +16,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
-import { VgCoreModule } from '@videogular/ngx-videogular/core';
-import { VgControlsModule } from '@videogular/ngx-videogular/controls';
-import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
-import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
-import { SafePipe } from './pipes/safe.pipe';
-import { SafePipeModule } from 'safe-pipe';
+// import { VgCoreModule } from '@videogular/ngx-videogular/core';
+// import { VgControlsModule } from '@videogular/ngx-videogular/controls';
+// import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+// import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
+// import { SafePipe } from './pipes/safe.pipe';
+// import { SafePipeModule } from 'safe-pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NotFoundComponent,
-    SafePipe,
-    SafePipeModule,
+    // SafePipe,
+    // SafePipeModule,
     //HttpClientModule,
     //HttpClient,
     // HttpModule,
@@ -47,10 +47,10 @@ import { SafePipeModule } from 'safe-pipe';
     FormsModule,
     HttpClientModule,
     DragDropModule,
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
+    // VgCoreModule,
+    // VgControlsModule,
+    // VgOverlayPlayModule,
+    // VgBufferingModule,
     //HttpClient,
   ],
   providers: [],
