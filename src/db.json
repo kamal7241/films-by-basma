@@ -1,0 +1,76 @@
+{
+  "films": [
+    {
+      "channel": 1,
+      "id": 1,
+      "title": "news of the world ",
+      "duration": "2:48",
+      "likes": 100,
+      "subscribes": 300,
+      "notes": "",
+      "embed": "https://www.youtube.com/embed/zTZDb_iKooI",
+      "description": "Fueled with determination and a passion for science, a bright young girl builds a rocket ship to the moon to prove the existence of a legendary Moon Goddess. Directed by Oscar®-Winning Filmmaker & Animator, Glen Keane, and produced by Gennie Rim and Peilin Chou. Starring Cathy Ang, Phillipa Soo, Robert G. Chiu, Ken Jeong, John Cho, Ruthie Ann Miles, Margaret Cho, Kimiko ",
+      "shares": 22
+    },
+    {
+      "channel": 1,
+      "id": 2,
+      "title": "wonder",
+      "duration": "2:17",
+      "likes": 10,
+      "subscribes": 300,
+      "notes": "",
+      "embed": "https://www.youtube.com/715be382-5516-4ead-8a79-6dc37ab8ea7f",
+      "description": "Fueled with determination and a passion for science, a bright young girl builds a rocket ship to the moon to prove the existence of a legendary Moon Goddess. Directed by Oscar®-Winning Filmmaker & Animator, Glen Keane, and produced by Gennie Rim and Peilin Chou. Starring Cathy Ang, Phillipa Soo, Robert G. Chiu, Ken Jeong, John Cho, Ruthie Ann Miles, Margaret Cho, Kimiko ",
+      "shares": 22
+    },
+    {
+      "channel": 1,
+      "id": 3,
+      "title": "over the moon",
+      "duration": "3:02",
+      "likes": 10,
+      "subscribes": 300,
+      "notes": "",
+      "embed": "https://www.youtube.com/b1d7b628-9cce-4480-b7d7-3129619ab8ad",
+      "description": "Fueled with determination and a passion for science, a bright young girl builds a rocket ship to the moon to prove the existence of a legendary Moon Goddess. Directed by Oscar®-Winning Filmmaker & Animator, Glen Keane, and produced by Gennie Rim and Peilin Chou. Starring Cathy Ang, Phillipa Soo, Robert G. Chiu, Ken Jeong, John Cho, Ruthie Ann Miles, Margaret Cho, Kimiko ",
+      "shares": 22
+    },
+    {
+      "channel": 2,
+      "id": 4,
+      "title": "Miracle in Cell No. 7",
+      "duration": "1:47",
+      "likes": 10,
+      "subscribes": 300,
+      "notes": "",
+      "embed": "https://www.youtube.com/embed/G2wPoBy2JQI",
+      "description": "Miracle in Cell No. 7. Separated from his daughter, a father with an intellectual disability must prove his innocence when he is jailed for the death of a commander's child.Miracle in Cell No. 7. Separated from his daughter, a father with an intellectual disability must prove his innocence when he is jailed for the death of a commander's child.",
+      "shares": 22
+    },
+    {
+      "channel": 2,
+      "id": 5,
+      "title": "47 Meters Down",
+      "duration": "1:59",
+      "likes": 10,
+      "subscribes": 300,
+      "notes": "",
+      "embed": "https://www.youtube.com/embed/AvXjx8SZbv8",
+      "description": "The film follows the story of four teen girls diving in a ruined underwater city, who quickly find themselves in a watery hell as their fun outing turns into heart-stopping fear when they learn they are not alone in the submerged caves. As they swim deeper into the claustrophobic labyrinth of caves they enter the territory of the deadliest shark species in the ocean.",
+      "shares": 22
+    },
+    {
+      "channel": 2,
+      "id": 6,
+      "title": "TAKEN 3",
+      "duration": "2:32",
+      "likes": 10,
+      "subscribes": 300,
+      "notes": "mmmmmmmmmmmmmmmmmmmmmm",
+      "embed": "https://www.youtube.com/embed/JuU0M2xBasc",
+      "description": "Liam Neeson returns as ex-covert operative Bryan Mills, whose reconciliation with his ex-wife is tragically cut short when she is brutally murdered. Consumed with rage, and framed for the crime, he goes on the run to evade the relentless pursuit of the CIA, FBI and the police. For one last time, Mills must use his “particular set of skills,” ",
+      "shares": 22
+    }
+  ]
+}

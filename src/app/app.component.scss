@@ -1,0 +1,37 @@
+// general rules
+
+* {
+  box-sizing: border-box;
+  //   font-family: "Lato", sans-serif;
+}
+
+// left side
+.left {
+  background-color: #1e1e1e;
+}
+
+.ilogo {
+  height: 18em;
+  // border: solid 2px #c0c0c0 ;
+  // box-shadow: ;
+}
+
+.nav {
+  font-size: 1.15em;
+}
+.active {
+  color: #e82423 !important;
+}
+
+.item:hover {
+  color: #e82423 !important;
+}
+
+.item {
+  color: whitesmoke;
+}
+
+// right side
+.right {
+  background-color: #ffffff;
+}
