@@ -19,8 +19,9 @@ export class FilmsServiceService {
   get refresh() {
     return this.sub;
   }
+  
   getFilmsbyChannelID(id: number): Observable<IFilm[]> {
-    return this.http.get<IFilm[]>(`http://localhost:3000/films?channel=${id}`);
+    return this.http.get<IFilm[]>(`https://films-api-basma-hesham.herokuapp.com/films?channel=${id}`);
 
     // return this.filmsOfChannel ? this.filmsOfChannel : null;
   }
