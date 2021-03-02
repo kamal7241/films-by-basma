@@ -20,14 +20,16 @@ export class FilmsServiceService {
     return this.sub;
   }
   getFilmsbyChannelID(id: number): Observable<IFilm[]> {
-    return this.http.get<IFilm[]>(`${environment.url}/films?channel=${id}`);
+    return this.http.get<IFilm[]>(
+      `${environment.filmsurl}/films?channel=${id}`
+    );
 
     // return this.filmsOfChannel ? this.filmsOfChannel : null;
   }
 
   addComment(id: number, comment: string) {
     this.http
-      .patch(`${environment.url}/films/${id}`, { notes: comment })
+      .patch(`${environment.filmsurl}/films/${id}`, { notes: comment })
       .subscribe(
         (res) => {
           console.log('from film service patch ' + res);
